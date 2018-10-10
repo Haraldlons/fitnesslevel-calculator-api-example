@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to example page for using kondiskalkulatoren API</title>
+  <!-- md-icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.css" rel="stylesheet">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.8.94/css/materialdesignicons.css" rel="stylesheet" media="all" type="text/css">
+</head>
+<body ng-app="sampleApp">
+
+  <div ng-controller="mainController as vm" ng-cloak>
+    <md-content class="md-padding" >
+      <md-nav-bar md-selected-nav-item="vm.currentNavItem" nav-bar-aria-label="navigation links" id="navBar">
+        <md-nav-item md-nav-sref="home" name="homeName">Hjem</md-nav-item>
+      </md-nav-bar>
+    </md-content>
+  </div>
+
+
+  <ui-view></ui-view>
+
+
+  <!-- Dependencies -->
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.min.js"></script>
+
+    <!-- load MUI -->
+  <link href="//cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.9.7/angular/mui-angular.min.js"></script>
+
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.min.js"></script>
+
+  <!-- Self written files -->
+  <script src="app.js"></script>
+  <script src="components/main.ctrl.js"></script>
+  <script src="components/chatRoom/chatRoom.ctrl.js"></script>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+</body>
+</html>

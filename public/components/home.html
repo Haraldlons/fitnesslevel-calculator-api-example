@@ -1,0 +1,101 @@
+<script src="main.ctrl.js"></script>
+<md-content flex layout-padding id="mainContent">
+    <h1>Example page for using 'kondiskalkulatoren' API</h1>
+    <p>This page is meant for giving an example how to use the API for 'kondiskalkulatoren'. You are advised to both
+        play around on this, page but more importantly, have a look at the source code. </p>
+    <p><a href="https://www.worldfitnesslevel.org/service/api/documentation" target="_blank">Documentation for the API is found here</a></p>
+    <p>If you have any questions, please send an email to 'haraldlons@gmail.com'</p>
+
+    <h2>Input Fields To Kondiskalkulatoren API</h2>
+    <form ng-submit="vm.callAPI()">
+        <label><b>Check this box to edit systemID:</b> <input type="checkbox" ng-model="vm.disableSystemID"></label><br/>
+        System ID:
+        <input type="text" name="systemid" ng-model="vm.system_id" ng-disabled="vm.disableSystemID"><br>
+        <br>
+        <label><b>Check this box to edit the fields below:</b> <input type="checkbox" ng-model="vm.checked"></label><br/>
+
+        <label for="repeatSelect"> What is your education? </label>
+        <select name="repeatSelect" id="repeatSelect" ng-model="vm.education_id" ng-disabled="vm.checked" >
+            <option ng-repeat="option in vm.valueOptions.education" value="{{option.id}}" >{{option.text}}</option>
+        </select>
+        <tt>education.id = {{vm.education_id}}</tt><br/>
+        <br>
+
+        <label for="repeatSelect"> What is your ethnicity? </label>
+        <select name="repeatSelect" ng-model="vm.ethnicity_id" ng-disabled="vm.checked">
+            <option ng-repeat="option in vm.valueOptions.ethnicity" value="{{option.id}}">{{option.text}}</option>
+        </select>
+        <tt>ethnicity.id = {{vm.ethnicity_id}}</tt><br/>
+        <br>
+
+        What is your Age?
+        <input type="text" name="age" ng-model="vm.age" ng-disabled="vm.checked">
+        <tt>age = {{vm.age}}</tt><br/>
+        <br>
+
+        <label for="repeatSelect"> How often do you workout? </label>
+        <select name="repeatSelect" ng-model="vm.workoutFrequency_id" ng-disabled="vm.checked">
+            <option ng-repeat="option in vm.valueOptions.workoutFrequency" value="{{option.id}}">{{option.text}}</option>
+        </select>
+        <tt>workoutFrequency.id = {{vm.workoutFrequency_id}}</tt><br/>
+        <br>
+
+        <label for="repeatSelect"> When you workout, how long is the training? </label>
+        <select name="repeatSelect" ng-model="vm.workoutTime_id" ng-disabled="vm.checked">
+            <option ng-repeat="option in vm.valueOptions.workoutTime" value="{{option.id}}">{{option.text}}</option>
+        </select>
+        <tt>workoutTime.id = {{vm.workoutTime_id}}</tt><br/>
+        <br>
+
+        <label for="repeatSelect"> When you workout, how hard to you push yourself? </label>
+        <select name="repeatSelect" ng-model="vm.hardness_id" ng-disabled="vm.checked">
+            <option ng-repeat="option in vm.valueOptions.hardness" value="{{option.id}}">{{option.text}}</option>
+        </select>
+        <tt>hardness.id = {{vm.hardness_id}}</tt><br/>
+        <br>
+
+        What is your resting pulse??
+        <input type="text" name="restingPulse" ng-model="vm.restingPulse" ng-disabled="vm.checked">
+        <tt>restingPulse = {{vm.restingPulse}}</tt><br/>
+        <br>
+
+        What is your maximum heart rate?
+        <input type="text" name="maximumHeartRate" ng-model="vm.maximumHeartRate" ng-disabled="vm.checked">
+        <tt>maximumHeartRate = {{vm.maximumHeartRate}}</tt><br/>
+        <br>
+
+        What is your weight? (kg)
+        <input type="text" name="age" ng-model="vm.weight" ng-disabled="vm.checked">
+        <tt>weight = {{vm.weight}}</tt><br/>
+        <br>
+
+        What is your height? (cm)
+        <input type="text" name="age" ng-model="vm.height" ng-disabled="vm.checked">
+        <tt>height = {{vm.height}}</tt><br/>
+        <br>
+
+        <input type="submit" value="Submit form, and get response from kondiskalkulatoren API">
+    </form>
+
+    <div ng-show="vm.gotSuccessResponseFromAPI">
+        <h2>Successfully got response from API</h2>
+        <p>Below is parts of the response printed:</p>
+        <h4>Explanations:</h4>
+            <h5>actualLevels: <b>{{vm.response.explanations.actualLevels}}</b></h5>
+            <h5>conclusion: <b>{{vm.response.explanations.conclusion}}</b></h5>
+            <h5>expectedLevels: <b>{{vm.response.explanations.expectedLevels}}</b></h5>
+            <h5>explanation: <b>{{vm.response.explanations.explanation}}</b></h5>
+        <h4>VO2 Max Calculation:</h4>
+            <h5>enduranceAge: <b>{{vm.response.vo2MaxCalculation.enduranceAge}}</b></h5>
+            <h5>vo2max: <b>{{vm.response.vo2MaxCalculation.vo2max}}</b></h5>
+        <p>Even more data is received, which you can see by looking at the console.log (ctrl+shift+j)</p>
+    </div>
+
+    <div ng-show="vm.gotFailedResponseFromAPI">
+        <h2>Failed to get response from API</h2>
+        <p>Something went wrong when calling the API.</p>
+        <p>If you don't have a valid system_id you will not get a response. The system_id needs to be "test"</p>
+        <p>Have a look at the console.log (ctrl+shift+j) and/or look at the code.</p>
+    </div>
+</md-content>
+

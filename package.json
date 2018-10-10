@@ -1,0 +1,23 @@
+{
+  "name": "fitness-calculator-api-request-example",
+  "version": "1.0.0",
+  "description": "Small web-app made to learn how to call fitness calculator api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haraldlons/simple-firebase-login-chat-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haraldlons/simple-firebase-login-chat-project/issues"
+  },
+  "homepage": "https://github.com/Haraldlons/simple-firebase-login-chat-project#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,103 @@
+.inputdemoIcons {
+  /*
+.right-icon {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  left: auto;
+  margin-top: 0;
+}
+*/ }
+  .inputdemoIcons .inputIconDemo {
+    min-height: 48px; }
+  .inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+    color: green; }
+  .inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue; }
+  .inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
+  .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+    color: red; }
+
+
+/*For NavBarCtrl*/
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+
+
+/*For state greier*/
+.active { color: red; font-weight: bold; }
+
+#navBar {
+    color: #0019ff;
+}
+
+@keyframes fade_classified {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/*Glemmer hele tiden syntaksten i CSS, så her kommer noen eksempler*/
+/* http://www.w3schools.com/css/css_syntax.asp */
+/*HTML element:; <p></p>*/
+p {
+  color: grey;
+}
+/*ID: <h3 id="toppTekst"></h3>*/
+#toppTekst {
+  color: blue;
+}
+/*class: <md-content class="md-padding" id="navBar">*/
+.md-padding.md-padding {
+  color: #0019ff;
+}
+
+
+/*Icon greier*/
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px; }
+
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px; }
+
+
+/*main.html*/
+#mainContent{
+  padding-left: 20px;
+}
+
+body {
+    /*color: #999999;
+    font: 14px/1.5em "Lucida Grande",Arial,sans-serif;
+    margin: 20px;
+    width: auto;*/
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#saveButton {
+  color: #999999;
+}
+
+
+#myimg {
+   max-width: 250px;
+}
+
+md-toast.md-error-toast-theme div.md-toast-content{
+    color: white !important;
+    background-color: red !important;
+}
+
+md-toast.md-success-toast-theme div.md-toast-content{
+    color: white !important;
+    background-color: green !important;
+}
+
+md-toast.md-pending-toast-theme div.md-toast-content{
+    color: black !important;
+    background-color: yellow !important;
+}
