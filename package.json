@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Haraldlons/simple-firebase-login-chat-project.git"
+    "url": "git+https://github.com/Haraldlons/fitnesslevel-calculator-api-example.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Haraldlons/simple-firebase-login-chat-project/issues"
+    "url": "https://github.com/Haraldlons/fitnesslevel-calculator-api-example/issues"
   },
-  "homepage": "https://github.com/Haraldlons/simple-firebase-login-chat-project#readme",
+  "homepage": "https://github.com/Haraldlons/fitnesslevel-calculator-api-example#readme",
   "dependencies": {
     "angular": "^1.7.5",
     "http-server": "^0.11.1"
