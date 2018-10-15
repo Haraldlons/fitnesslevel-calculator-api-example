@@ -29,11 +29,6 @@ app.config(["$stateProvider", "$urlRouterProvider", "$mdThemingProvider",
         // the rest is the same for ui-router and ngRoute...
         controller: "mainController as vm",
         templateUrl: "components/home.html",
-    })
-    .state("chat", {
-        url: "/chat",
-        controller: "chatRoomCtrl as vm",
-        templateUrl: "components/chatRoom/chatRoom.html",
     });
 
 }]);
