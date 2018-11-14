@@ -4,6 +4,8 @@ Small web-app made to learn how to call fitness calculator api
 
 # Prerequisite
 - npm
+- git
+
 
 # Get setup
 ```bash
