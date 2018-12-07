@@ -4,6 +4,7 @@ Small web-app made to learn how to call fitness calculator api
 ![alt text](https://github.com/Haraldlons/fitnesslevel-calculator-api-example/blob/master/media/page.png "Example page")
 
 
+
 # Prerequisite
 - npm
 - git
@@ -20,3 +21,6 @@ http-server -p 8080 -o
 
 # Questions?
 Send them to 'haraldlons@gmail.com'. 
+
+# Example usage
+![alt text](https://github.com/Haraldlons/fitnesslevel-calculator-api-example/blob/master/media/use-api.gif "Example usage")
