@@ -1,7 +1,7 @@
 # Simple Fitness Calculator API Request Example
 Small web-app made to learn how to call fitness calculator api
 
-![alt text](https://github.com/Haraldlons/fitnesslevel-calculator-api-example/media/page.png "Example page")
+![alt text](https://github.com/Haraldlons/fitnesslevel-calculator-api-example/blob/master/media/page.png "Example page")
 
 
 # Prerequisite
