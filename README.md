@@ -10,7 +10,7 @@ Small web-app made to learn how to call fitness calculator api
 - git
 
 
-# Get setup
+# Getting started
 ```bash
 git clone https://github.com/Haraldlons/fitnesslevel-calculator-api-example.git
 cd fitnesslevel-calculator-api-example
@@ -18,6 +18,8 @@ npm i
 npm install -g http-server
 http-server -p 8080 -o
 ```
+If you now open your web-browser with url 'http://localhost:8080', you should be able to see the page hosted locally. 
+Try writing different values in the fields and see what results you get.
 
 # Questions?
 Send them to 'haraldlons@gmail.com'. 
