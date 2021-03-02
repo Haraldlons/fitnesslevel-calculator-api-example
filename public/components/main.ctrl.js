@@ -43,11 +43,14 @@
       };
 
       function testGetResponseAPI() {
-        const proxyurl = "https://cors-anywhere.herokuapp.com/"; // https://tinyurl.com/y9p4bfl6
+        // cors-anywhere.herokuapp.com is no longer public: https://github.com/Rob--W/cors-anywhere/issues/301
+        // Therefore you have to use another
+        // TTO NTNU is not responsible for which CORS-proxy you are using
+        const proxyurl = 'https://cors.bridged.cc/';
         const url = "https://www.worldfitnesslevel.org/service/api/response";
         const data = {
           userId: "asdf",
-          systemId: vm.system_id,
+          systemId: vm.system_id, // For testing, needs to be 'secretTestSystemId'
           responseId: "", //must be used if you want to update an existing response, or else remove or set blank
           input: {
             education: vm.education_id, //see /types
@@ -69,6 +72,7 @@
           }
         };
 
+        console.log(proxyurl + url);
         $http({
           url: proxyurl + url,
           method: "POST",
