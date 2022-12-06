@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Haraldlons/fitnesslevel-calculator-api-example#readme",
   "dependencies": {
     "angular": "^1.7.9",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   }
 }
